@@ -58,3 +58,18 @@ function getRandomColor() {
       return color;
     }
 });
+
+// Add an event listener to the checkbox
+document.getElementById("switch").addEventListener("change", function() {
+    var imageDiv = document.getElementById("image");
+    
+    if (this.checked) {
+      // The checkbox is checked (ON)
+      // Show the image
+      imageDiv.style.display = "block";
+    } else {
+      // The checkbox is not checked (OFF)
+      // Hide the image
+      imageDiv.style.display = "none";
+    }
+  });
