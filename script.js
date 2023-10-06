@@ -5,9 +5,9 @@ var increaseFont = document.querySelector('#increaseFont');
 var decreaseFont = document.querySelector('#decreaseFont');
 var paragraph = document.querySelector('#paragraph');
 var fontColor = document.querySelector('#changeFontColor');
-var hideImage = document.querySelector('#hideImage')
-var showImage = document.querySelector('#showImage')
-var image = document.querySelector('#image');
+//var hideImage = document.querySelector('#hideImage')
+//var showImage = document.querySelector('#showImage')
+//var image = document.querySelector('#image');
 
 
 
@@ -34,19 +34,14 @@ decreaseFont.addEventListener('click', function() {
     paragraph.style.fontSize = newSize + 'px';
 });
 
-hideImage.addEventListener('click', function() {
-    image.style.display = 'none';
-});
+//hideImage.addEventListener('click', function() {
+//    image.style.display = 'none';
+//});
 
-showImage.addEventListener('click', function() {  
-    image.style.display= 'block'
-
-});
-
-
-
-
-
+//showImage.addEventListener('click', function() {  
+//    image.style.display= 'block'
+//
+//});
 
 //color randomizer to be used by any event listening needing to randomize color//
 function getRandomColor() {
